@@ -13,7 +13,7 @@ export default function Header({ theme, onToggleTheme }) {
           Activities
         </Text>
         <Text color="$color" >
-          AI & Machine Learning Program
+          User activities and progress
         </Text>
       </YStack>
 
