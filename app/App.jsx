@@ -12,7 +12,7 @@ export default function App() {
   const [selectedProgram, setSelectedProgram] = useState('all');
   const [activityType, setActivityType] = useState('all');
   const [status, setStatus] = useState('all');
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'))

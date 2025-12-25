@@ -9,6 +9,9 @@ export default function FilterPill({ label, active, onPress }) {
       backgroundColor={active ? '$blue10' : '$background'}
       color={active ? '#fff' : ''}
       onPress={onPress}
+      hoverStyle={{
+        backgroundColor: "$blue10"
+      }}
     >
       {label}
     </Button>
