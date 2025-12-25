@@ -1,4 +1,4 @@
-#Learning Activity App
+# Learning Activity App
 
 A cross-platform learning activity management interface built with React Native, Expo, and Tamagui. Works seamlessly on web, Android, and iOS.
 
@@ -157,7 +157,7 @@ Enables users to filter activities efficiently.
 4. Check progress, status, and due dates
 5. Take action with dynamic buttons (Start/Continue/Review)
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |-----------|---------|
@@ -195,7 +195,7 @@ Enables users to filter activities efficiently.
 - Limited accessibility features (screen readers, keyboard navigation)
 - Dark mode not fully customized for all components
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Integrate with real-time API/backend
 - [ ] Comprehensive unit and integration tests
