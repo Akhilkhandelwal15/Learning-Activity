@@ -6,7 +6,7 @@ export default function Header({ theme, onToggleTheme }) {
     <XStack
       justifyContent="space-between"
       alignItems="center"
-      marginBottom="$4"
+      marginBottom="$2"
     >
       <YStack gap="$1">
         <Text fontSize="$8" fontWeight="700" color="$color">

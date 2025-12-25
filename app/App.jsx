@@ -5,8 +5,10 @@ import FilterBar from '../components/filters/FilterBar'
 import Header from '../components/layout/Header'
 import PageContainer from '../components/layout/PageContainer'
 import EmptyState from '../components/ui/EmptyState'
+import StickyFilters from '../components/ui/StickyFilters'
 import { programs } from '../data/activities.js'
 import config from '../theme/tamagui.config'
+
 
 export default function App() {
   const [selectedProgram, setSelectedProgram] = useState('all');
@@ -40,14 +42,17 @@ export default function App() {
       <ScrollView>
         <PageContainer>
           <Header theme={theme} onToggleTheme={toggleTheme} />
-          <FilterBar
-            selectedProgram={selectedProgram}
-            setSelectedProgram={setSelectedProgram}
-            selectedType={activityType}
-            setSelectedType={setActivityType}
-            selectedStatus={status}
-            setSelectedStatus={setStatus}
-          />
+          <StickyFilters>
+            <FilterBar
+              selectedProgram={selectedProgram}
+              setSelectedProgram={setSelectedProgram}
+              selectedType={activityType}
+              setSelectedType={setActivityType}
+              selectedStatus={status}
+              setSelectedStatus={setStatus}
+            />
+          </StickyFilters>
+          
           {filteredPrograms.length===0 ? (
             <EmptyState
               title="No activities match your filters"
